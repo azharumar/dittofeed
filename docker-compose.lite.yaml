@@ -82,7 +82,7 @@ services:
     #   - .env
     image: temporalio/auto-setup:${TEMPORAL_VERSION:-1.22.4}
     labels:
-      kompose.volume.type: configMap
+      - "kompose.volume.type=configMap"
     networks:
       - dittofeed-network-lite
     ports:
