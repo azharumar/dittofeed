@@ -111,7 +111,7 @@ services:
       - DYNAMIC_CONFIG_FILE_PATH=config/dynamicconfig/dev.yaml
     image: temporalio/auto-setup:1.18.5
     labels:
-      kompose.volume.type: configMap
+      - "kompose.volume.type=configMap"
     networks:
       - dittofeed-network-dev
     ports:
